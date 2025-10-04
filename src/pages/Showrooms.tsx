@@ -1,6 +1,7 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import { MapPin, Phone, Clock, Mail, Navigation as NavigationIcon } from "lucide-react";
 
 const showrooms = [
@@ -105,7 +106,7 @@ const Showrooms = () => {
               {showrooms.map((showroom, index) => (
                 <div
                   key={showroom.city}
-                  className="border border-border rounded-sm p-8 hover:border-accent transition-all duration-300 hover:shadow-lg animate-fade-in-up"
+                  className="border border-border rounded-xl p-8 hover:border-accent transition-all duration-300 hover:shadow-lg animate-fade-in-up"
                   style={{ animationDelay: `${index * 100}ms` }}
                 >
                   <h3 className="text-3xl font-serif font-semibold mb-6 text-accent">
@@ -218,9 +219,9 @@ const Showrooms = () => {
                   Walk-ins are always welcome, but we recommend scheduling an appointment to ensure dedicated time with our design consultants.
                 </p>
                 <Button size="lg" asChild>
-                  <a href="mailto:showrooms@atelier.com">
+                  <Link to="/services#consultation">
                     Schedule an Appointment
-                  </a>
+                  </Link>
                 </Button>
               </div>
             </div>

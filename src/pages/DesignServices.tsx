@@ -93,7 +93,7 @@ const DesignServices = () => {
               {services.map((service, index) => (
                 <div
                   key={service.title}
-                  className="border border-border rounded-sm p-8 hover:border-accent transition-colors animate-fade-in-up"
+                  className="border border-border rounded-xl p-8 hover:border-accent transition-colors animate-fade-in-up"
                   style={{ animationDelay: `${index * 100}ms` }}
                 >
                   <service.icon className="h-10 w-10 text-accent mb-4" />
@@ -148,7 +148,7 @@ const DesignServices = () => {
                     className="flex gap-8 items-start animate-fade-in-up"
                     style={{ animationDelay: `${index * 100}ms` }}
                   >
-                    <div className="text-5xl font-serif font-semibold text-accent/30 shrink-0 w-24">
+                    <div className="text-5xl font-serif font-semibold text-accent shrink-0 w-24">
                       {item.step}
                     </div>
                     <div className="pt-2">
@@ -167,7 +167,7 @@ const DesignServices = () => {
         </section>
 
         {/* Consultation Form */}
-        <section className="section-padding">
+        <section id="consultation" className="section-padding">
           <div className="container">
             <div className="max-w-3xl mx-auto">
               <div className="text-center mb-12 animate-fade-in-up">

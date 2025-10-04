@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Heart, MapPin, Menu, X } from "lucide-react";
+import { MapPin, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   Sheet,
@@ -12,10 +12,8 @@ const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
+    { name: "Home", href: "/" },
     { name: "Collections", href: "/collections" },
-    { name: "Living", href: "/collections?room=living" },
-    { name: "Dining", href: "/collections?room=dining" },
-    { name: "Bedroom", href: "/collections?room=bedroom" },
     { name: "About", href: "/about" },
     { name: "Design Services", href: "/services" },
   ];
@@ -43,29 +41,11 @@ const Navigation = () => {
 
         {/* Right Actions */}
         <div className="flex items-center space-x-4">
-          <Button
-            variant="ghost"
-            size="icon"
-            className="hidden md:flex"
-            asChild
-          >
-            <Link to="/showrooms">
-              <MapPin className="h-5 w-5" />
-              <span className="sr-only">Find Showroom</span>
-            </Link>
-          </Button>
+          <Link to="/showrooms" className="hidden md:flex h-10 w-10 items-center justify-center text-muted-foreground hover:text-accent transition-colors">
+            <MapPin className="h-6 w-6" />
+            <span className="sr-only">Find Showroom</span>
+          </Link>
           
-          <Button
-            variant="ghost"
-            size="icon"
-            asChild
-          >
-            <Link to="/wishlist">
-              <Heart className="h-5 w-5" />
-              <span className="sr-only">Wishlist</span>
-            </Link>
-          </Button>
-
           {/* Mobile Menu */}
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild>

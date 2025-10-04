@@ -48,8 +48,6 @@ const ProductDetail = () => {
       <main className="container px-4 lg:px-8 py-12">
         {/* Breadcrumb */}
         <nav className="mb-8 text-sm text-muted-foreground">
-          <Link to="/" className="hover:text-accent transition-colors">Home</Link>
-          <span className="mx-2">/</span>
           <Link to="/collections" className="hover:text-accent transition-colors">Collections</Link>
           <span className="mx-2">/</span>
           <span className="text-foreground">Mercer Armchair</span>

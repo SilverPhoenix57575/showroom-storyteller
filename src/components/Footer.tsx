@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="space-y-4">
-            <h3 className="text-2xl font-serif font-semibold">Atelier</h3>
+            <h3 className="text-4xl font-serif font-semibold">Atelier</h3>
             <p className="text-muted-foreground">
               Timeless design for modern living. Crafted with uncompromising quality since 1992.
             </p>
@@ -42,7 +42,7 @@ const Footer = () => {
 
           {/* Collections */}
           <div>
-            <h4 className="font-semibold mb-4">Collections</h4>
+            <h4 className="text-xl font-semibold mb-4">Collections</h4>
             <ul className="space-y-3">
               <li>
                 <Link to="/collections?room=living" className="text-muted-foreground hover:text-accent transition-colors">
@@ -69,7 +69,7 @@ const Footer = () => {
 
           {/* Company */}
           <div>
-            <h4 className="font-semibold mb-4">Company</h4>
+            <h4 className="text-xl font-semibold mb-4">Company</h4>
             <ul className="space-y-3">
               <li>
                 <Link to="/about" className="text-muted-foreground hover:text-accent transition-colors">
@@ -96,7 +96,7 @@ const Footer = () => {
 
           {/* Support */}
           <div>
-            <h4 className="font-semibold mb-4">Support</h4>
+            <h4 className="text-xl font-semibold mb-4">Support</h4>
             <ul className="space-y-3">
               <li>
                 <Link to="/contact" className="text-muted-foreground hover:text-accent transition-colors">

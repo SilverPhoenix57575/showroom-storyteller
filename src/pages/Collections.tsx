@@ -9,6 +9,9 @@ import armchair1 from "@/assets/product-armchair-1.jpg";
 import armchair2 from "@/assets/product-armchair-2.jpg";
 import diningImage from "@/assets/collection-dining.jpg";
 import bedroomImage from "@/assets/collection-bedroom.jpg";
+import barStoolImage from "@/assets/Bar Stool.jpg";
+import consoleTableImage from "@/assets/Console table.jpg";
+import wardrobeImage from "@/assets/Wardrobe.jpg";
 
 const products = [
   {
@@ -64,6 +67,87 @@ const products = [
     style: "Contemporary",
     price: "From $890",
     image: armchair2,
+  },
+  {
+    id: 7,
+    name: "Executive Desk",
+    category: "Tables",
+    room: "Office",
+    style: "Modern",
+    price: "From $3,200",
+    image: diningImage,
+  },
+  {
+    id: 8,
+    name: "Comfort Sofa",
+    category: "Seating",
+    room: "Living",
+    style: "Contemporary",
+    price: "From $4,500",
+    image: armchair1,
+  },
+  {
+    id: 9,
+    name: "Storage Cabinet",
+    category: "Storage",
+    room: "Living",
+    style: "Industrial",
+    price: "From $1,800",
+    image: bedroomImage,
+  },
+  {
+    id: 10,
+    name: "Dining Bench",
+    category: "Seating",
+    room: "Dining",
+    style: "Scandinavian",
+    price: "From $650",
+    image: armchair2,
+  },
+  {
+    id: 11,
+    name: "Nightstand Set",
+    category: "Storage",
+    room: "Bedroom",
+    style: "Mid-Century",
+    price: "From $1,200",
+    image: diningImage,
+  },
+  {
+    id: 12,
+    name: "Office Chair",
+    category: "Seating",
+    room: "Office",
+    style: "Contemporary",
+    price: "From $950",
+    image: armchair1,
+  },
+  {
+    id: 13,
+    name: "Console Table",
+    category: "Tables",
+    room: "Living",
+    style: "Modern",
+    price: "From $2,100",
+    image: consoleTableImage,
+  },
+  {
+    id: 14,
+    name: "Wardrobe",
+    category: "Storage",
+    room: "Bedroom",
+    style: "Contemporary",
+    price: "From $3,500",
+    image: wardrobeImage,
+  },
+  {
+    id: 15,
+    name: "Bar Stool",
+    category: "Seating",
+    room: "Dining",
+    style: "Industrial",
+    price: "From $420",
+    image: barStoolImage,
   },
 ];
 
@@ -127,13 +211,13 @@ const Collections = () => {
       
       <main className="flex-1">
         {/* Header */}
-        <section className="section-padding bg-gradient-to-b from-secondary/30 to-background">
+        <section className="py-16 px-4 lg:px-8 bg-gradient-to-b from-secondary/30 to-background">
           <div className="container">
             <div className="max-w-3xl animate-fade-in-up">
-              <h1 className="text-5xl md:text-6xl font-serif font-semibold mb-6">
+              <h1 className="text-4xl md:text-5xl font-serif font-semibold mb-4">
                 Our Collections
               </h1>
-              <p className="text-xl text-muted-foreground">
+              <p className="text-lg text-muted-foreground">
                 Discover furniture that tells a story. Each piece is crafted with meticulous attention to detail and designed to become a cherished part of your home.
               </p>
             </div>
@@ -333,8 +417,10 @@ const Collections = () => {
                     <Link
                       key={product.id}
                       to={`/product/${product.id}`}
-                      className="group block animate-fade-in-up"
-                      style={{ animationDelay: `${index * 50}ms` }}
+                      className="group block"
+                      onClick={() => {
+                        sessionStorage.setItem('collectionsScrollPosition', window.scrollY.toString());
+                      }}
                     >
                       <div className="relative overflow-hidden rounded-sm mb-4 bg-muted">
                         <img
