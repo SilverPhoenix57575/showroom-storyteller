@@ -39,9 +39,8 @@ const Hero = () => {
             </Button>
             <Button
               size="lg"
-              variant="outline"
               asChild
-              className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground/10 backdrop-blur-sm"
+              className="bg-transparent text-primary-foreground hover:bg-primary-foreground hover:text-primary border-2 border-primary-foreground font-medium transition-all"
             >
               <Link to="/showrooms">
                 Visit Our Showroom

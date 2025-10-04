@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { Link, useSearchParams } from "react-router-dom";
 import { Filter, X } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
@@ -68,10 +68,39 @@ const products = [
 ];
 
 const Collections = () => {
+  const [searchParams, setSearchParams] = useSearchParams();
   const [selectedRoom, setSelectedRoom] = useState<string | null>(null);
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [selectedStyle, setSelectedStyle] = useState<string | null>(null);
   const [showFilters, setShowFilters] = useState(false);
+
+  // Initialize filters from URL parameters
+  useEffect(() => {
+    const roomParam = searchParams.get('room');
+    const categoryParam = searchParams.get('category');
+    const styleParam = searchParams.get('style');
+    
+    if (roomParam) {
+      const capitalizedRoom = roomParam.charAt(0).toUpperCase() + roomParam.slice(1);
+      if (rooms.includes(capitalizedRoom)) {
+        setSelectedRoom(capitalizedRoom);
+      }
+    }
+    if (categoryParam) {
+      const capitalizedCategory = categoryParam.charAt(0).toUpperCase() + categoryParam.slice(1);
+      if (categories.includes(capitalizedCategory)) {
+        setSelectedCategory(capitalizedCategory);
+      }
+    }
+    if (styleParam) {
+      const formattedStyle = styleParam.split('-').map(word => 
+        word.charAt(0).toUpperCase() + word.slice(1)
+      ).join('-');
+      if (styles.includes(formattedStyle)) {
+        setSelectedStyle(formattedStyle);
+      }
+    }
+  }, []);
 
   const rooms = ["Living", "Dining", "Bedroom", "Office"];
   const categories = ["Seating", "Tables", "Beds", "Storage"];
