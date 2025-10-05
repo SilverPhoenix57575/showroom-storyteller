@@ -6,18 +6,27 @@ import Footer from "@/components/Footer";
 import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import armchair1 from "@/assets/product-armchair-1.jpg";
+import armchair2 from "@/assets/product-armchair-2.jpg";
+import diningImage from "@/assets/collection-dining.jpg";
+import bedroomImage from "@/assets/collection-bedroom.jpg";
+import officeImage from "@/assets/collection-office.jpg";
+import heroLivingRoom from "@/assets/hero-living-room.jpg";
+import wardrobeImage from "@/assets/Wardrobe.jpg";
+import barStoolImage from "@/assets/Bar Stool.jpg";
+import consoleTableImage from "@/assets/Console table.jpg";
 
 const topProducts = [
-  { id: 1, name: "Sofa Set", price: "₹45,000", image: "/src/assets/product-armchair-1.jpg" },
-  { id: 2, name: "Dining Table", price: "₹25,000", image: "/src/assets/collection-dining.jpg" },
-  { id: 3, name: "Wardrobe", price: "₹35,000", image: "/src/assets/Wardrobe.jpg" },
-  { id: 4, name: "Bar Stool", price: "₹8,000", image: "/src/assets/Bar Stool.jpg" },
-  { id: 5, name: "Console Table", price: "₹15,000", image: "/src/assets/Console table.jpg" },
-  { id: 6, name: "Office Chair", price: "₹12,000", image: "/src/assets/collection-office.jpg" },
-  { id: 7, name: "Bed Set", price: "₹40,000", image: "/src/assets/collection-bedroom.jpg" },
-  { id: 8, name: "Armchair", price: "₹18,000", image: "/src/assets/product-armchair-2.jpg" },
-  { id: 9, name: "Coffee Table", price: "₹10,000", image: "/src/assets/hero-living-room.jpg" },
-  { id: 10, name: "Study Desk", price: "₹20,000", image: "/src/assets/collection-office.jpg" },
+  { id: 1, name: "Sofa Set", price: "₹45,000", image: armchair1 },
+  { id: 2, name: "Dining Table", price: "₹25,000", image: diningImage },
+  { id: 3, name: "Wardrobe", price: "₹35,000", image: wardrobeImage },
+  { id: 4, name: "Bar Stool", price: "₹8,000", image: barStoolImage },
+  { id: 5, name: "Console Table", price: "₹15,000", image: consoleTableImage },
+  { id: 6, name: "Office Chair", price: "₹12,000", image: officeImage },
+  { id: 7, name: "Bed Set", price: "₹40,000", image: bedroomImage },
+  { id: 8, name: "Armchair", price: "₹18,000", image: armchair2 },
+  { id: 9, name: "Coffee Table", price: "₹10,000", image: heroLivingRoom },
+  { id: 10, name: "Study Desk", price: "₹20,000", image: officeImage },
 ];
 
 const TopProducts = () => {
