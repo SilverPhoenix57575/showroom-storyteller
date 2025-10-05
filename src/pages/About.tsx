@@ -25,11 +25,11 @@ const About = () => {
   ];
 
   const timeline = [
-    { year: "1990", event: "Atelier was founded with a vision to create furniture that endures" },
-    { year: "2000", event: "Opened our first flagship showroom and expanded to 5 artisan workshops" },
-    { year: "2010", event: "Launched our signature Heritage Collection, now an industry benchmark" },
-    { year: "2020", event: "Committed to 100% sustainable sourcing across all product lines" },
-    { year: "2025", event: "Serving design-conscious customers across 20+ countries" },
+    { year: "2000", event: "Pankaj Furniture was established in Bapuji Nagar, Bhubaneswar" },
+    { year: "2010", event: "Expanded our showroom and product range to serve more customers" },
+    { year: "2015", event: "Introduced modern furniture collections alongside traditional designs" },
+    { year: "2020", event: "Enhanced our service with same-day delivery options" },
+    { year: "2025", event: "Continuing to serve Bhubaneswar with quality furniture solutions" },
   ];
 
   return (
@@ -42,10 +42,10 @@ const About = () => {
           <div className="container">
             <div className="max-w-4xl mx-auto text-center animate-fade-in-up">
               <h1 className="text-5xl md:text-7xl font-serif font-semibold mb-6">
-                Craftsmanship That Endures
+                Quality That Endures
               </h1>
               <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed">
-                For over three decades, we've been dedicated to creating furniture that transcends fleeting trends. Each piece is a testament to our unwavering commitment to quality, sustainability, and timeless design.
+                We've been dedicated to providing quality furniture that meets modern needs. Each piece is a testament to our commitment to quality, value, and contemporary design.
               </p>
             </div>
           </div>
@@ -61,13 +61,13 @@ const About = () => {
                 </h2>
                 <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
                   <p>
-                    Atelier began in a small workshop with a simple belief: furniture should be built to last, not just for a season, but for a lifetime—and beyond.
+                    Pankaj Furniture began with a simple belief: furniture should be built to last and provide value to our customers in Bhubaneswar and beyond.
                   </p>
                   <p>
-                    Our founder, a master carpenter, was dismayed by the rise of mass-produced, disposable furniture. He envisioned a return to the traditions of fine craftsmanship, where every detail mattered and every piece told a story.
+                    Located in the heart of Bapuji Nagar, we have been serving the furniture needs of families and businesses with dedication and quality service.
                   </p>
                   <p>
-                    Today, that vision lives on. We work with skilled artisans who share our passion for quality. From selecting sustainable hardwoods to applying hand-rubbed finishes, we honor the time-tested techniques that make furniture truly exceptional.
+                    Today, we continue to offer a wide range of furniture solutions, from traditional to modern designs, ensuring every customer finds pieces that fit their space and budget perfectly.
                   </p>
                 </div>
               </div>
@@ -150,10 +150,10 @@ const About = () => {
                 The Art of Making
               </h2>
               <p className="text-lg md:text-xl leading-relaxed opacity-90">
-                Each Atelier piece passes through the hands of multiple master craftspeople. From the woodworker who selects the perfect grain, to the upholsterer who ensures every seam is flawless, to the finisher who brings out the natural beauty of the material—every step is performed with meticulous care.
+                At Pankaj Furniture, we carefully select each piece to ensure it meets our quality standards. From sturdy construction to attractive finishes, every item is chosen with our customers' satisfaction in mind.
               </p>
               <p className="text-lg md:text-xl leading-relaxed opacity-90">
-                We believe that true luxury isn't about extravagance—it's about quality, integrity, and the quiet confidence that comes from owning something made to last.
+                We believe that quality furniture should be accessible and affordable, providing comfort and style that enhances your home for years to come.
               </p>
               <div className="pt-6">
                 <Button

@@ -61,8 +61,8 @@ const Contact = () => {
                     <Phone className="h-6 w-6 text-accent shrink-0 mt-1" />
                     <div>
                       <h3 className="font-semibold mb-1">Phone</h3>
-                      <p className="text-muted-foreground">1-800-ATELIER</p>
-                      <p className="text-sm text-muted-foreground">Mon-Fri 9am-6pm EST</p>
+                      <p className="text-muted-foreground">094382 24472</p>
+                      <p className="text-sm text-muted-foreground">Open Daily 9am-9pm</p>
                     </div>
                   </div>
 
@@ -70,7 +70,7 @@ const Contact = () => {
                     <Mail className="h-6 w-6 text-accent shrink-0 mt-1" />
                     <div>
                       <h3 className="font-semibold mb-1">Email</h3>
-                      <p className="text-muted-foreground">hello@atelier.com</p>
+                      <p className="text-muted-foreground">info@pankajfurniture.com</p>
                       <p className="text-sm text-muted-foreground">We'll respond within 24 hours</p>
                     </div>
                   </div>
@@ -78,9 +78,9 @@ const Contact = () => {
                   <div className="flex items-start gap-4">
                     <MapPin className="h-6 w-6 text-accent shrink-0 mt-1" />
                     <div>
-                      <h3 className="font-semibold mb-1">Headquarters</h3>
-                      <p className="text-muted-foreground">425 Madison Avenue, Suite 200</p>
-                      <p className="text-muted-foreground">New York, NY 10017</p>
+                      <h3 className="font-semibold mb-1">Address</h3>
+                      <p className="text-muted-foreground">Plot No-97, 7th St, Bapuji Nagar</p>
+                      <p className="text-muted-foreground">Bhubaneswar, Odisha 751009</p>
                     </div>
                   </div>
                 </div>

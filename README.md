@@ -1,6 +1,6 @@
-# Atelier Furniture Showroom
+# Pankaj Furniture Showroom
 
-A sophisticated furniture showroom website built with modern web technologies.
+A modern furniture showroom website for Pankaj Furniture, Bhubaneswar.
 
 **Status:** ✅ Production Ready | **Build:** ✅ Passing | **Grade:** A (95/100)
 
@@ -138,4 +138,4 @@ For detailed information, see:
 
 ---
 
-**Built with ❤️ using React + TypeScript + Vite**
+**Built with ❤️ for Pankaj Furniture using React + TypeScript + Vite**

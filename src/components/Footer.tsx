@@ -8,9 +8,9 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="space-y-4">
-            <h3 className="text-4xl font-serif font-semibold">Atelier</h3>
+            <h3 className="text-4xl font-serif font-semibold">Pankaj Furniture</h3>
             <p className="text-muted-foreground">
-              Timeless design for modern living. Crafted with uncompromising quality since 1992.
+              Quality furniture for modern living. Serving Bhubaneswar with trusted service.
             </p>
             <div className="flex space-x-4 pt-4">
               <a
@@ -124,7 +124,7 @@ const Footer = () => {
 
         <div className="mt-16 pt-8 border-t border-border">
           <p className="text-center text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Atelier Furniture. All rights reserved.
+            © {new Date().getFullYear()} Pankaj Furniture. All rights reserved.
           </p>
         </div>
       </div>
