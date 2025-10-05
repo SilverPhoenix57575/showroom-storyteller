@@ -23,7 +23,7 @@ const Navigation = () => {
       <nav className="container flex h-16 items-center justify-between px-4 lg:px-8">
         {/* Logo */}
         <Link to="/" className="flex items-center space-x-2">
-          <span className="text-2xl font-serif font-semibold tracking-tight">Pankaj Furniture</span>
+          <span className="text-2xl font-serif font-semibold tracking-tight">Furniture</span>
         </Link>
 
         {/* Desktop Navigation */}

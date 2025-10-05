@@ -1,6 +1,6 @@
-# Pankaj Furniture Showroom
+# Furniture Showroom
 
-A modern furniture showroom website for Pankaj Furniture, Bhubaneswar.
+A modern furniture showroom website for Furniture, Bhubaneswar.
 
 **Status:** ✅ Production Ready | **Build:** ✅ Passing | **Grade:** A (95/100)
 
@@ -138,4 +138,4 @@ For detailed information, see:
 
 ---
 
-**Built with ❤️ for Pankaj Furniture using React + TypeScript + Vite**
+**Built with ❤️ for Furniture using React + TypeScript + Vite**

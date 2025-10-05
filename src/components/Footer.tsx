@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="space-y-4">
-            <h3 className="text-4xl font-serif font-semibold">Pankaj Furniture</h3>
+            <h3 className="text-4xl font-serif font-semibold">Furniture</h3>
             <p className="text-muted-foreground">
               Quality furniture for modern living. Serving Bhubaneswar with trusted service.
             </p>
@@ -124,7 +124,7 @@ const Footer = () => {
 
         <div className="mt-16 pt-8 border-t border-border">
           <p className="text-center text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Pankaj Furniture. All rights reserved.
+            © {new Date().getFullYear()} Furniture. All rights reserved.
           </p>
         </div>
       </div>

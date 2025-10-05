@@ -10,12 +10,12 @@ const showrooms = [
     address: "Plot No-97, 7th St, Bapuji Nagar",
     zipcode: "Bhubaneswar, Odisha 751009",
     phone: "094382 24472",
-    email: "info@pankajfurniture.com",
+    email: "info@furniture.com",
     hours: {
       weekday: "Monday - Friday: 9am - 9pm",
       weekend: "Saturday - Sunday: 9am - 9pm",
     },
-    mapLink: "https://maps.google.com/maps?q=Pankaj+Furniture+Bapuji+Nagar+Bhubaneswar",
+    mapLink: "https://maps.google.com/maps?q=Furniture+Bapuji+Nagar+Bhubaneswar",
   },
 ];
 
@@ -54,7 +54,7 @@ const Showrooms = () => {
                     allowFullScreen
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
-                    title="Pankaj Furniture Location"
+                    title="Furniture Location"
                   />
                 </div>
               </div>

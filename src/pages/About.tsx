@@ -25,7 +25,7 @@ const About = () => {
   ];
 
   const timeline = [
-    { year: "2000", event: "Pankaj Furniture was established in Bapuji Nagar, Bhubaneswar" },
+    { year: "2000", event: "Furniture was established in Bapuji Nagar, Bhubaneswar" },
     { year: "2010", event: "Expanded our showroom and product range to serve more customers" },
     { year: "2015", event: "Introduced modern furniture collections alongside traditional designs" },
     { year: "2020", event: "Enhanced our service with same-day delivery options" },
@@ -61,7 +61,7 @@ const About = () => {
                 </h2>
                 <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
                   <p>
-                    Pankaj Furniture began with a simple belief: furniture should be built to last and provide value to our customers in Bhubaneswar and beyond.
+                    Furniture began with a simple belief: furniture should be built to last and provide value to our customers in Bhubaneswar and beyond.
                   </p>
                   <p>
                     Located in the heart of Bapuji Nagar, we have been serving the furniture needs of families and businesses with dedication and quality service.
@@ -150,7 +150,7 @@ const About = () => {
                 The Art of Making
               </h2>
               <p className="text-lg md:text-xl leading-relaxed opacity-90">
-                At Pankaj Furniture, we carefully select each piece to ensure it meets our quality standards. From sturdy construction to attractive finishes, every item is chosen with our customers' satisfaction in mind.
+                At Furniture, we carefully select each piece to ensure it meets our quality standards. From sturdy construction to attractive finishes, every item is chosen with our customers' satisfaction in mind.
               </p>
               <p className="text-lg md:text-xl leading-relaxed opacity-90">
                 We believe that quality furniture should be accessible and affordable, providing comfort and style that enhances your home for years to come.
